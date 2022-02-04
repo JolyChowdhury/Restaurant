@@ -1,0 +1,41 @@
+@import '../variable/variables';
+@import '../mixin/mixins'; 
+
+
+
+/*==============================================
+                Menu part start
+==============================================*/
+#banner {
+    padding: 140px;
+    .ban_text{
+        h1{
+            font-family: $ffyesev;
+            font-size: 90px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        a{
+            
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            margin-right: 30px;
+            margin-top: 30px;
+            padding: 19px 50px;
+            border-radius: 3px;
+            background-color: #d5d0bb6b;
+            border: 3px solid #d5d0bb;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            &:hover{ 
+                background: rgba(0, 0, 0, 0.26);
+                border: rgba(0, 0, 0, 0.26);
+            }
+        }
+    }
+}

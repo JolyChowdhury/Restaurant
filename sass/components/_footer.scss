@@ -1,0 +1,47 @@
+@import '../variable/variables';
+@import '../mixin/mixins'; 
+
+
+
+/*==============================================
+                footer part start
+==============================================*/
+#fut {
+    padding: 30px 0;
+    background: #191919;
+    .fut_row {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .fut1 {
+            max-width: 30%;
+            h5{
+                @include ts(#fff, 16px, $ffyesev, 400); 
+                margin-bottom: 10px;
+            }
+            p{
+                margin-top: 10px;  
+                @include ts(#fff, 16px, $ffyesev, 400);
+            }
+        }
+    }
+    .icon{
+        margin-top: 19px;
+        
+        ul{
+            display: flex;
+            
+            li{
+                a{
+                    i{
+                        color: #fff;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+/*==============================================
+                footer part start
+==============================================*/

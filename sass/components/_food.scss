@@ -1,0 +1,39 @@
+@import '../variable/variables';
+@import '../mixin/mixins'; 
+
+
+
+/*==============================================
+                food part start
+==============================================*/
+#food {
+    padding: 70px 0;
+    .food_ro {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .food_text {
+            flex-basis: 50%;
+            h3{
+                @include ts($yello, 36px, $ffyesev, 400);
+                margin-bottom: 19px;
+            }
+            p{
+                @include ts(#4c4c4c, 16px, $fflato, 400);
+                margin-bottom: 50px;
+                margin-top: 35px;
+            }
+        }
+        .food_img {
+            flex-basis: 50%;
+            img{
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+/*==============================================
+                food part end
+==============================================*/

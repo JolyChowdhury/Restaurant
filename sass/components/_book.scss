@@ -1,0 +1,99 @@
+@import '../variable/variables';
+@import '../mixin/mixins'; 
+
+
+
+/*==============================================
+                book part start
+==============================================*/
+#book {
+    padding: 100px 0;
+    background: #fcfcfc;
+    .book_row {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .book_img {
+            flex-basis: 60%;
+            img{
+                max-width: 100%;
+                margin-right: 19px;
+            }
+        }
+        .book_text {
+            flex-basis: 30%;
+            h3{
+                @include ts($yello, 36px, $ffyesev, 400);
+                margin-bottom: 19px;
+            }
+            p{
+                @include ts(#4c4c4c, 16px, $fflato, 400);
+                margin-bottom: 50px;
+                margin-top: 35px;
+            }
+        }
+        .table {
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .table_name {
+                max-width: 43%;
+                justify-content: space-between;
+                .nam1{
+                    h4{
+                        @include ts($yello, 14px, $ffyesev, 400);
+                        text-align: left;
+                        margin-bottom: 10px; 
+                        text-transform: capitalize;
+                    }
+                    .name{
+                        padding: 10px 25px;
+                        text-transform: capitalize;
+                    }
+                }
+                .date{
+                    h4{
+                        @include ts($yello, 14px, $ffyesev, 400);
+                        text-align: left;
+                        margin-bottom: 10px; 
+                        text-transform: capitalize;
+                        margin-top: 19px;
+                    }
+                    .dt{
+                        padding: 10px 40px;
+                        text-transform: capitalize;
+                    }
+                }
+                .party{
+                    h4{
+                        @include ts($yello, 14px, $ffyesev, 400);
+                        text-align: left;
+                        margin-bottom: 10px; 
+                        text-transform: capitalize;
+                        margin-top: 19px;
+                    }
+                    .num{
+                        padding: 10px 25px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            
+        }
+        .btn{
+            margin-top: 30px;
+            button{
+                padding: 10px 60px;
+                cursor: pointer;
+                background: $yello;
+                text-transform: capitalize;
+                color: #fff;
+            }
+        }
+    }
+    
+}
+/*==============================================
+                book part start
+==============================================*/

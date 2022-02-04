@@ -1,0 +1,69 @@
+@import '../variable/variables';
+@import '../mixin/mixins'; 
+
+
+
+/*==============================================
+                Menu part start
+==============================================*/
+#menu {
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    .menu_ro {
+        max-width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        .menu_logo {
+            flex-basis: 20%;
+        }
+        .menu_text {
+            flex-basis: 80%;
+            line-height: 92px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 28%;
+                width: 70px;
+                height: 2px;
+                background: #fff;
+                transform: translateX(50%);
+                -webkit-transform: translateX(50%);
+                -moz-transform: translateX(50%);
+                -ms-transform: translateX(50%);
+                -o-transform: translateX(50%);
+                &:hover{
+                    background: $black;
+                }
+            }
+                ul{              
+                    display: flex;
+                    justify-content: flex-end;
+                    li{
+                        a{
+                            margin-left: 55px;
+                            color: #fff;
+                            font-size: 19px;
+                            font-family: 'Gentium Book Basic', serif;
+                            font-weight: 700;
+                            text-transform: capitalize;
+                            transition: all linear .3s;
+                            &:hover{
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            
+        }
+    }
+}
+/*==============================================
+                Menu part end
+==============================================*/

@@ -1,0 +1,43 @@
+@import '../variable/variables';
+@import '../mixin/mixins'; 
+
+
+
+/*==============================================
+                ingredients part start
+==============================================*/
+#ingre {
+    padding: 100px 0;
+    .col1 {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .col3{
+            flex-basis: 50%;
+        }
+        .col {
+            flex-basis: 50%;
+            padding: 80px 70px;
+            background: rgba(0, 0, 0, 0.609);
+            h4{
+                @include ts(#fff, 36px, $ffyesev, 400);
+                margin-bottom: 15px;
+            }
+            p{
+                @include ts(#fff, 16px, $fflato, 400);
+                margin-bottom: 70px;
+                margin-top: 30px;
+            }
+            .img{
+                a{ 
+                    flex-wrap: wrap;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+/*==============================================
+                ingredients part start
+==============================================*/
+

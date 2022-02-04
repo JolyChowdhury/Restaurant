@@ -1,0 +1,58 @@
+@import '../variable/variables';
+@import '../mixin/mixins'; 
+
+
+
+/*==============================================
+                chart part start
+==============================================*/
+#chart {
+    padding: 30px 0;
+    .chart {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .chart_col {
+            flex-basis: 45%;
+            position: relative;
+            .text{
+                display: flex;
+                justify-content: flex-end;
+            }
+            h4{
+                @include ts($yello, 36px, $ffyesev, 400);
+                margin-bottom: 19px;
+                text-transform: capitalize;
+            }
+            h5{
+                flex-basis: 50%;
+                @include ts($yello, 21px, $ffyesev, 400); 
+                margin-top: 30px;
+                text-align: left;
+                text-transform: capitalize;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    @include after(0%, 110%, 445px, 1px, #decf9c);
+                }
+            }
+            h6{
+                flex-basis: 50%;
+                @include ts($yello, 21px, $ffyesev, 400);
+                margin-top: 30px;
+
+            }
+            p{
+                @include ts(#4c4c4c, 16px, $fflato, 400);
+                text-align: left;
+                margin-bottom: 35px;
+                margin-top: 15px;
+                margin-right: 35px;
+            }
+        }
+    }
+}
+/*==============================================
+                chart part start
+==============================================*/

@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cont {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.text_center {
+  text-align: center;
+}
+
+/*==============================================
+                Common css end
+==============================================*/
+/*==============================================
+                Menu part start
+==============================================*/
+#menu {
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#menu .menu_ro {
+  max-width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#menu .menu_ro .menu_logo {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+#menu .menu_ro .menu_text {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  line-height: 92px;
+  position: relative;
+}
+
+#menu .menu_ro .menu_text::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 28%;
+  width: 70px;
+  height: 2px;
+  background: #fff;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+
+#menu .menu_ro .menu_text::after:hover {
+  background: #00000098;
+}
+
+#menu .menu_ro .menu_text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#menu .menu_ro .menu_text ul li a {
+  margin-left: 55px;
+  color: #fff;
+  font-size: 19px;
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+#menu .menu_ro .menu_text ul li a:hover {
+  color: #00000098;
+}
+
+/*==============================================
+                Menu part end
+==============================================*/
+/*==============================================
+                Menu part start
+==============================================*/
+#banner {
+  padding: 140px;
+}
+
+#banner .ban_text h1 {
+  font-family: "Yeseva One", cursive;
+  font-size: 90px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#banner .ban_text a {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-right: 30px;
+  margin-top: 30px;
+  padding: 19px 50px;
+  border-radius: 3px;
+  background-color: #d5d0bb6b;
+  border: 3px solid #d5d0bb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+#banner .ban_text a:hover {
+  background: rgba(0, 0, 0, 0.26);
+  border: rgba(0, 0, 0, 0.26);
+}
+
+/*==============================================
+                food part start
+==============================================*/
+#food {
+  padding: 70px 0;
+}
+
+#food .food_ro {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#food .food_ro .food_text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#food .food_ro .food_text h3 {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+
+#food .food_ro .food_text p {
+  color: #4c4c4c;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-bottom: 50px;
+  margin-top: 35px;
+}
+
+#food .food_ro .food_img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#food .food_ro .food_img img {
+  max-width: 100%;
+  width: 100%;
+}
+
+/*==============================================
+                food part end
+==============================================*/
+/*==============================================
+                ingredients part start
+==============================================*/
+#ingre {
+  padding: 100px 0;
+}
+
+#ingre .col1 {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#ingre .col1 .col3 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#ingre .col1 .col {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 80px 70px;
+  background: rgba(0, 0, 0, 0.609);
+}
+
+#ingre .col1 .col h4 {
+  color: #fff;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#ingre .col1 .col p {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+#ingre .col1 .col .img a {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+/*==============================================
+                ingredients part start
+==============================================*/
+/*==============================================
+                footer part start
+==============================================*/
+#fut {
+  padding: 30px 0;
+  background: #191919;
+}
+
+#fut .fut_row {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#fut .fut_row .fut1 {
+  max-width: 30%;
+}
+
+#fut .fut_row .fut1 h5 {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#fut .fut_row .fut1 p {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+}
+
+#fut .icon {
+  margin-top: 19px;
+}
+
+#fut .icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fut .icon ul li a i {
+  color: #fff;
+}
+
+/*==============================================
+                footer part start
+==============================================*/
+/*==============================================
+                review part start
+==============================================*/
+#review {
+  padding: 100px 240px;
+}
+
+#review .text {
+  width: 780px;
+  height: 580px;
+  padding: 80px 60px;
+  background: rgba(0, 0, 0, 0.609);
+}
+
+#review .text h4 {
+  color: #fff;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#review .text p {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+#review .text h6 {
+  color: #fff;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+}
+
+/*==============================================
+                review part start
+==============================================*/
+/*==============================================
+                book part start
+==============================================*/
+#book {
+  padding: 100px 0;
+  background: #fcfcfc;
+}
+
+#book .book_row {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#book .book_row .book_img {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+#book .book_row .book_img img {
+  max-width: 100%;
+  margin-right: 19px;
+}
+
+#book .book_row .book_text {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+#book .book_row .book_text h3 {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+
+#book .book_row .book_text p {
+  color: #4c4c4c;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-bottom: 50px;
+  margin-top: 35px;
+}
+
+#book .book_row .table {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#book .book_row .table .table_name {
+  max-width: 43%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#book .book_row .table .table_name .nam1 h4 {
+  color: #cc9900;
+  font-size: 14px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+#book .book_row .table .table_name .nam1 .name {
+  padding: 10px 25px;
+  text-transform: capitalize;
+}
+
+#book .book_row .table .table_name .date h4 {
+  color: #cc9900;
+  font-size: 14px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  margin-top: 19px;
+}
+
+#book .book_row .table .table_name .date .dt {
+  padding: 10px 40px;
+  text-transform: capitalize;
+}
+
+#book .book_row .table .table_name .party h4 {
+  color: #cc9900;
+  font-size: 14px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  margin-top: 19px;
+}
+
+#book .book_row .table .table_name .party .num {
+  padding: 10px 25px;
+  text-transform: capitalize;
+}
+
+#book .book_row .btn {
+  margin-top: 30px;
+}
+
+#book .book_row .btn button {
+  padding: 10px 60px;
+  cursor: pointer;
+  background: #cc9900;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+/*==============================================
+                book part start
+==============================================*/
+/*==============================================
+                chart part start
+==============================================*/
+#chart {
+  padding: 30px 0;
+}
+
+#chart .chart {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#chart .chart .chart_col {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  position: relative;
+}
+
+#chart .chart .chart_col .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#chart .chart .chart_col h4 {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 19px;
+  text-transform: capitalize;
+}
+
+#chart .chart .chart_col h5 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  color: #cc9900;
+  font-size: 21px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-top: 30px;
+  text-align: left;
+  text-transform: capitalize;
+  position: relative;
+}
+
+#chart .chart .chart_col h5::after {
+  position: absolute;
+  position: absolute;
+  content: '';
+  left: 0%;
+  top: 110%;
+  width: 445px;
+  height: 1px;
+  background: #decf9c;
+}
+
+#chart .chart .chart_col h6 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  color: #cc9900;
+  font-size: 21px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+#chart .chart .chart_col p {
+  color: #4c4c4c;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 35px;
+  margin-top: 15px;
+  margin-right: 35px;
+}
+
+/*==============================================
+                chart part start
+==============================================*/
+/*# sourceMappingURL=style.css.map */

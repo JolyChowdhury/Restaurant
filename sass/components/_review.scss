@@ -1,0 +1,33 @@
+@import '../variable/variables';
+@import '../mixin/mixins'; 
+
+
+
+/*==============================================
+                review part start
+==============================================*/
+#review {
+    padding: 100px 240px;
+    .text {
+        width: 780px;
+        height: 580px;
+        padding: 80px 60px;
+        background: rgba(0, 0, 0, 0.609);
+        h4{
+            @include ts(#fff, 36px, $ffyesev, 400);
+            margin-bottom: 10px;
+        }
+        p{
+            @include ts(#fff, 16px, $fflato, 400);
+            margin-bottom: 70px;
+            margin-top: 30px;
+        }
+        h6{
+            @include ts(#fff, 36px, $ffyesev, 400);
+            
+        }
+    }
+}
+/*==============================================
+                review part start
+==============================================*/
